@@ -2,7 +2,7 @@ from pathlib import Path
 from decouple import config
 import os
 
-BASE_DIR = Path(**file**).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='unsafe-secret-key')
 DEBUG = config('DEBUG', default=False, cast=bool)
