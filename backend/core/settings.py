@@ -89,3 +89,6 @@ TEMPLATES = [{
 ],
 },
 }]
+CSRF_TRUSTED_ORIGINS = [
+    "https://taskmanager-production-1637.up.railway.app"
+]
